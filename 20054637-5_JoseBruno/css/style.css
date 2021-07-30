@@ -1,0 +1,9 @@
+body {
+    background: #f8f9fa!important;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-content {
+    height: 100%;
+    padding: 0 2%;
+}
