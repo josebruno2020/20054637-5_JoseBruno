@@ -10,7 +10,9 @@ require('./functions/routes.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="css/style.css">
     <?php if(isset($css)): ?>
     <link rel="stylesheet" href="css/<?=$css;?>">
@@ -19,10 +21,10 @@ require('./functions/routes.php');
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark mb-5">
+            <div class="container-fluid navbar-content">
                
-                <a class="navbar-brand" href="/"> <img src="" alt="Logo" class="img-rresponsive"> </a>
+                <a class="navbar-brand" href="/"> <img src="/images/logo.png" alt="Logo" class="img-rresponsive logo"> </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -46,16 +48,26 @@ require('./functions/routes.php');
             </div>
         </nav>
     </header>
-    <section class="container bg-light">
+    <section class="container">
         <?php require("./pages/$page.php"); ?>
     </section>
     
 
 
-    <footer class="fixed-bottom footer bg-primary">
-        <div class="footer-content d-flex justify-content-between ">
-            <p><?=date('Y');?></p>
-            <p>José Bruno</p>
+    <footer class=" footer">
+        <div class="footer-content">
+            <div>
+                <p>&copy; <?=date('Y');?></p>
+            </div>
+            <div>
+                <h5>Redes Sociais:</h5>
+                <div class="social-media">
+                    <a href="#"> <i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a> 
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                </div>
+            </div>
+            
         </div>
         
     </footer>

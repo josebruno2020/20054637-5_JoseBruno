@@ -1,9 +1,80 @@
+:root {
+    --bege-primary: rgba(249, 240, 199, .6);
+    --marrom-primary: rgba(59, 28, 13, 1);
+    --marrom-secondary: rgba(129, 85, 40, 1);
+}
+
+html {
+    height:100%;
+    min-height: 100%;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Indie Flower', cursive;
+}
+h1 {
+    font-size: 3.1rem;
+}
+
 body {
-    background: #f8f9fa!important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    background: var(--bege-primary)!important;
     font-family: 'Roboto', sans-serif;
+    color: var(--marrom-primary);
+}
+
+.navbar {
+    background-image: url(../images/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 10%;
+}
+.navbar-content {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: opacity(0.2);
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.nav-item a {
+    font-size: 1.2rem;
+}
+
+.social-media {
+    /* width: 25%; */
+    display: flex;
+    justify-content:space-around;
+    font-size: 35px;
+}
+
+.social-media a {
+    color: #000;
+}
+
+.footer {
+    background-image: url(../images/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    padding: auto;
+    height: 150px;
+    margin-top: auto;
 }
 
 .footer-content {
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+
+    backdrop-filter: opacity(0.3);
+    -webkit-backdrop-filter: opacity(0.3);
     height: 100%;
+    width: 100%;
     padding: 0 2%;
 }

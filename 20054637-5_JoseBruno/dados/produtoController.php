@@ -1,5 +1,6 @@
 <?php
 require('homeController.php');
+$css = 'produto.css';
 $title = 'Produto';
 $page = 'produto';
 $id = null;
