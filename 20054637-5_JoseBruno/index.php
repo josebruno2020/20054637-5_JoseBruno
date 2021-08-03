@@ -21,7 +21,7 @@ require('./functions/routes.php');
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark mb-5">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-white mb-5">
             <div class="container-fluid navbar-content">
                
                 <a class="navbar-brand" href="/"> <img src="/images/logo.png" alt="Logo" class="img-rresponsive logo"> </a>

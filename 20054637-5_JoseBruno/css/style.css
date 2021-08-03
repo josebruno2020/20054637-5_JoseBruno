@@ -25,24 +25,42 @@ body {
     color: var(--marrom-primary);
 }
 
-.navbar {
-    background-image: url(../images/fundo.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    min-height: 10%;
+.card {
+    background: var(--bege-primary);
+    border-radius:20px;
 }
+.navbar {
+    background: var(--marrom-secondary) !important;
+}
+
 .navbar-content {
     width: 100%;
     height: 100%;
-    backdrop-filter: opacity(0.2);
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 85px;
 }
 
 .nav-item a {
     font-size: 1.2rem;
+}
+
+.btn-primary {
+    background-color: rgb(187, 128, 70) !important;
+    border-color: var(--marrom-secondary) !important;
+    color: white !important;
+    transition: all .2s;
+}
+
+.btn-primary:hover {
+    opacity: .8;
+}
+
+.voltar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
 }
 
 .social-media {
@@ -53,11 +71,11 @@ body {
 }
 
 .social-media a {
-    color: #000;
+    color: var(--marrom-primary);
 }
 
 .footer {
-    background-image: url(../images/fundo.jpg);
+    background-image: url(../images/footer.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     
@@ -72,9 +90,9 @@ body {
     flex-wrap: wrap;
     align-items: center;
 
-    backdrop-filter: opacity(0.3);
-    -webkit-backdrop-filter: opacity(0.3);
+    backdrop-filter: grayscale(50%);
+    -webkit-backdrop-filter: opacity(50%);
     height: 100%;
     width: 100%;
-    padding: 0 2%;
+    padding: 0 5%;
 }

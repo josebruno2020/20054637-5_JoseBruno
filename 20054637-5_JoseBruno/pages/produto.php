@@ -1,11 +1,22 @@
-<h1 class="text-center">Produto</h1>
+<h1 class="text-center"><?=$produto['nome'];?></h1>
 
 <?php if(isset($produto) && !empty($produto)): ?>
-<div class="card">
-    <div class="card-header">
-        <h3><?=$produto['nome'];?></h3>
-    </div>
+<main class="produto">
+    <article class="card-produto">
+        <div class="card-produto-header">
+            <img class="produto-img" src="/images/<?=$produto['img'];?>" alt="<?=$produto['nome'];?>">
+        </div>
+        <div class="card-produto-body">
+            <p class="text-center font-lg"><?=$produto['descricao'];?></p>
+        </div>
+    </article>
+</main>
 
-</div>
+<section class="row">
+    <div class="voltar">
+        <a href="/" class="btn btn-primary">Voltar para Home</a>
+    </div>
+</section>
+
 
 <?php endif; ?>

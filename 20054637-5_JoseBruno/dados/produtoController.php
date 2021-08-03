@@ -4,7 +4,14 @@ $css = 'produto.css';
 $title = 'Produto';
 $page = 'produto';
 $id = null;
+
+//Pega o produto de acordo com o id;
 if(isset($_GET['id']) && !empty($_GET['id'])) {
     $id = filter_input(INPUT_GET, 'id');
-    $produto = $produtos[$id];
+    if(isset($produtos[$id]) && !empty($produtos[$id])) {
+        $produto = $produtos[$id];
+    } else {
+        header("Location: /");
+    }
+    
 }
