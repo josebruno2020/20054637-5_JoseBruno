@@ -11,8 +11,8 @@ if(isset($_SESSION['mensagem'])) {
 if($_POST && !empty($_POST)) {
     $nome = filter_input(INPUT_POST, 'nome');
 
-    $_SESSION['mensagem'] = "$nome, sua mensagem foi enviada com sucesso!";
+    echo "$nome, sua mensagem foi enviada com sucesso!";
     // $mensagem = $_SESSION['mensagem'];
-    header("Location: /?page=contato");
+    // header("Location: ?page=contato");
 }
 
