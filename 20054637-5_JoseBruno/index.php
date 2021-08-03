@@ -17,14 +17,14 @@ require('./functions/routes.php');
     <?php if(isset($css)): ?>
     <link rel="stylesheet" href="css/<?=$css;?>">
     <?php endif; ?>
-    <title>Site <?= $title != '' ? '-' : ''; ?> <?=$title;?></title>
+    <title>Pipoca <?= $title != '' ? '-' : ''; ?> <?=$title;?></title>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-white mb-5">
             <div class="container-fluid navbar-content">
                
-                <a class="navbar-brand" href="/"> <img src="/images/logo.png" alt="Logo" class="img-rresponsive logo"> </a>
+                <a class="navbar-brand" href="?page=home"> <img src="images/logo.png" alt="Logo" class="img-rresponsive logo"> </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -32,16 +32,16 @@ require('./functions/routes.php');
                 
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link <?= $page == 'home' ? 'active' : null ?>" aria-current="page" href="/">Home</a>
+                        <a class="nav-link <?= $page == 'home' ? 'active' : null ?>" aria-current="page" href="?page=home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?= $page == 'quem-somos' ? 'active' : null ?>" href="/quem-somos">Quem Somos</a>
+                        <a class="nav-link <?= $page == 'quem-somos' ? 'active' : null ?>" href="?page=quemsomos">Quem Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?= $page == 'onde-estamos' ? 'active' : null ?>" href="/onde-estamos">Onde Estamos</a>
+                        <a class="nav-link <?= $page == 'onde-estamos' ? 'active' : null ?>" href="?page=ondeestamos">Onde Estamos</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link <?= $page == 'contato' ? 'active' : null ?>" href="/contato">Contato</a>
+                        <a class="nav-link <?= $page == 'contato' ? 'active' : null ?>" href="?page=contato">Contato</a>
                     </li>
                 </ul>
             </div>

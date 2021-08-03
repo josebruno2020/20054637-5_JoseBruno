@@ -13,6 +13,6 @@ if($_POST && !empty($_POST)) {
 
     $_SESSION['mensagem'] = "$nome, sua mensagem foi enviada com sucesso!";
     // $mensagem = $_SESSION['mensagem'];
-    header("Location: /contato");
+    header("Location: /?page=contato");
 }
 

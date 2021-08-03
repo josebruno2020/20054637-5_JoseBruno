@@ -5,7 +5,7 @@
     <?php if(isset($_SESSION['mensagem'])):?>
         <div class="alert alert-success"><?=$_SESSION['mensagem'];?></div>
     <?php endif; ?>
-    <form action="/dados/contatoController.php" method="post" class="form form-contato">
+    <form action="dados/contatoController.php" method="post" class="form form-contato">
         <div class="form-group">
             <label for="nome" class="label">Nome:</label>
             <input type="text" name="nome" id="nome" class="form-control" autocomplete="off" placeholder="Digite seu nome" autofocus>
