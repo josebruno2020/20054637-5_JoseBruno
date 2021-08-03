@@ -11,7 +11,7 @@ if(isset($_GET['id']) && !empty($_GET['id'])) {
     if(isset($produtos[$id]) && !empty($produtos[$id])) {
         $produto = $produtos[$id];
     } else {
-        header("Location: /");
+        echo 'ID inválido!';exit;
     }
     
 }
