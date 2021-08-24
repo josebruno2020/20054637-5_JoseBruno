@@ -4,7 +4,7 @@
 
 ### Dados de Desenvolvedor:
 
-https://github.com/josebruno2020
+Perfil de Desenvolvedor: https://github.com/josebruno2020
 
 ### Dados Acadêmicos: 
 
